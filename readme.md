@@ -17,8 +17,9 @@
 
 1. The extension should detect all links and buttons on page
 2. It should pull the tag name and, if it's a link, the href attribute
-3. These should be stored in extension storage against the URL they were captured from
-4. In the content script, using outlines
+3. These should be passed to the background script and stored in extension local storage against the URL they were captured from
+   1. **Note:** Not local storage on the site
+4. In the content script, using outlines or box shadows
    1. Highlight any buttons as blue
    2. Highlight any links as orange
 5. In addition to this, the extension should monitor tab updates
