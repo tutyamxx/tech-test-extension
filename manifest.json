@@ -11,7 +11,7 @@
     "48": "images/icons/icon_content_48.png",
     "128": "images/icons/icon_content_128.png"
   },
-  "permissions": [],
+  "permissions": ["scripting", "activeTab", "storage"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
@@ -21,7 +21,8 @@
       "matches": ["http://*/*", "https://*/*"],
       "js": ["content-script.js"],
       "run_at": "document_end",
-      "all_frames": true
+      "all_frames": true,
+      "world": "ISOLATED"
     }
   ],
   "action": {
