@@ -20,3 +20,4 @@ credentials.json
 volumes
 dist
 .vscode
+./node_modules
